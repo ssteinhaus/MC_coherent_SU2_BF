@@ -7,10 +7,22 @@ as well as an algorithm to perform the full calculation (costly in terms of memo
 
 The paper for this code can be found here: https://arxiv.org/abs/2403.04836 (accepted for publication in Physical Review D)
 
-The algorithm is fairly simple to run:
+## List of files
 
 File "su2vertex.jl": Contains all necessary definitions of SU(2) representation theory, including the computation of the vertex amplitude, definition of coherent states etc.
 
 File "sampling_coherent_amplitude.jl": Contains the definitions to perform the sampling of intertwiners, including thermalization, sampling and approximation of the vertex amplitude.
 
 File "run_file.jl": Contains a few interesting examples of boundary data for the amplitude to simulate. Boundary states are defined, boundary spins can be chosen.
+
+### Dependencies on Julia Packages
+
+LinearAlgebra
+WignerSymbols
+HalfIntegers
+Combinatorics
+TensorOperations
+Memoization
+Plots
+BenchmarkTools
+JLD2
